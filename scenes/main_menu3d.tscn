@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://b2ftu1jxs6xdu"]
+
+[ext_resource type="Script" uid="uid://gphuju43ro6l" path="res://addons/ThirdPersonTemplate/main_menu_3d.gd" id="1_cuebl"]
+[ext_resource type="Texture2D" uid="uid://ch5kjisj6npwu" path="res://SkullBg.png" id="2_iwn7q"]
+[ext_resource type="FontFile" uid="uid://bt7pjiyiewe1a" path="res://assets_from_hero/assets/Assets/Martyric_PersonalUse.ttf" id="3_3m61x"]
+[ext_resource type="FontFile" uid="uid://cg5m3c1hrouvc" path="res://assets_from_hero/assets/Assets/brackeys_3d_game_assets/Friday13v12.ttf" id="3_syp23"]
+[ext_resource type="FontFile" uid="uid://c8cnr8lf5i3mh" path="res://assets_from_hero/assets/Assets/Friday13 Bonus NFI.ttf" id="4_xaukx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6gxry"]
+texture = ExtResource("2_iwn7q")
+modulate_color = Color(0.41674656, 0.4167466, 0.41674656, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jih2k"]
+bg_color = Color(1, 1, 1, 0.99215686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 15
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0k2ld"]
+bg_color = Color(0.63539076, 0.63539076, 0.63539076, 0.99215686)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_size = 15
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0k2ld"]
+
+[node name="MainMenu3d" type="Control" unique_id=833477992]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cuebl")
+
+[node name="Panel" type="Panel" parent="." unique_id=973675477]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_6gxry")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=732017898]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1095.0
+offset_top = -581.0
+offset_right = -725.0
+offset_bottom = -287.3761
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/separation = 15
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1460086304]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9109098, 0.18465626, 0.22019711, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_syp23")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0k2ld")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0k2ld")
+text = "Start Game"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1475154839]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9109098, 0.18465626, 0.22019711, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_xaukx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0k2ld")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0k2ld")
+text = "Options"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=967774293]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9109098, 0.18465626, 0.22019711, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_xaukx")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jih2k")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0k2ld")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0k2ld")
+text = "Exit"
+
+[node name="Label" type="Label" parent="." unique_id=1611878166]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -754.0
+offset_top = 30.0
+offset_right = -79.0
+offset_bottom = 268.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.83137256, 0, 0.18039216, 1)
+theme_override_constants/shadow_offset_y = 25
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("3_3m61x")
+theme_override_font_sizes/font_size = 75
+text = "One *Life * Two * Live"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_3_pressed"]
